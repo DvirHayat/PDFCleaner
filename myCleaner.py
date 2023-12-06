@@ -6,7 +6,8 @@ import numpy as np
 colors={"Red":[np.array([200, 0, 0]),np.array([255, 254, 254])],
         "Blue":[np.array([0, 0, 200]),np.array([254, 254, 255])], 
         "Yellow":[np.array([120, 120, 0]),np.array([255, 255, 254])]}
-        
+ 
+#Function for testing additional color ranges         
 def print_colors(input_image):
     # Read the image
     image = cv2.imread(input_image)
@@ -41,7 +42,6 @@ def clean_color_to_white(input_image_path, output_image_path,color_to_remove):
     # Change the colored regions to white
     rgb_image[mask != 0] = [255, 255, 255]  # Set to white where the mask is non-zero
 
-
     # Convert back to BGR (if needed) and save the result
     result_image = cv2.cvtColor(rgb_image, cv2.COLOR_RGB2BGR)
     cv2.imwrite(output_image_path, result_image)
@@ -71,7 +71,8 @@ def remove_color_from_pdf(input_path, output_path,color_to_remove):
         # Save the modified image as a temporary file
         temp_image_path = f"temp_image_{page_number}.png"
         img.save(temp_image_path)
-        print_colors(temp_image_path)
+        # TESTING
+        # print_colors(temp_image_path)
         clean_color_to_white(temp_image_path, temp_image_path,color_to_remove)
 
         # Create a new blank page with the same dimensions

@@ -51,7 +51,7 @@ browse_dest_button.pack(pady=10)
 
 # Select menu with color options
 color_var = tk.StringVar()
-color_var.set("")  # Default selection
+color_var.set("Select Color")  # Default selection
 
 def on_color_change(*args):
     create_file_button.config(state="normal" if color_var.get() else "disabled")

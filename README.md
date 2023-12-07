@@ -21,7 +21,7 @@ pip install tk pillow opencv-python numpy
 ```
 ## Usage
 
-1. Run the PDFCleaner script.
+1. Run the display.py script.
 2. Use the graphical user interface to:
    - Select the PDF file you want to clean.
    - Choose the destination folder to save the cleaned PDF as "output.pdf."

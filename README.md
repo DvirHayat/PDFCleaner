@@ -26,7 +26,7 @@ pip install tk pillow opencv-python numpy
    - Select the PDF file you want to clean.
    - Choose the destination folder to save the cleaned PDF as "output.pdf."
    - Specify the color (red, blue, or yellow) to remove.
-3. Click the "Clean PDF" button to initiate the color removal process.
+3. Click the "Create File" button to initiate the color removal process.
 4. Once the process is complete, find the cleaned PDF named "output.pdf" in the specified destination folder.
 
 ## Notes

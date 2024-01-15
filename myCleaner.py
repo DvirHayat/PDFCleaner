@@ -71,7 +71,7 @@ def remove_color_from_pdf(input_path, output_path,color_to_remove):
         # Save the modified image as a temporary file
         temp_image_path = f"temp_image_{page_number}.png"
         img.save(temp_image_path)
-        print_colors(temp_image_path)
+        #print_colors(temp_image_path)
         clean_color_to_white(temp_image_path, temp_image_path,color_to_remove)
 
         # Create a new blank page with the same dimensions
